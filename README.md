@@ -83,7 +83,7 @@ Untuk menjalankan sistem machine learning prediksi delivery time ada 2 cara, bis
 
 1. Clone repository:
 ```
-git clone https://github.com/ahmadaldiyanto/dropout-app.git
+git clone https://github.com/ahmadaldiyanto/food-delivery-app
 cd dropout-app
 ```
 2. Aktifkan virtual environment:
@@ -106,9 +106,9 @@ http://localhost:8501
 
 **Menjalankan Prototype Secara Online**
 
-Untuk menjalankan prototype secara online, link bisa di akses di [sini](https://dropout-app-jaya-institute.streamlit.app/)
+Untuk menjalankan prototype secara online, link bisa di akses di [sini](https://food-delivery-prediction-system.streamlit.app/)
 ```
-https://dropout-app-jaya-institute.streamlit.app/
+https://food-delivery-prediction-system.streamlit.app/
 ```
 
 ## Conclusion
