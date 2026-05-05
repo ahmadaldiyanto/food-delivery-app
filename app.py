@@ -181,7 +181,7 @@ st.markdown("""
     }
 
     /* Clean Up Streamlit UI */
-    .block-container { padding-top: 1.5rem !important; }
+    .block-container { padding-top: 1.5rem !important; padding-bottom: 5rem !important; }
     footer { visibility: hidden; }
     header { visibility: hidden; }
     
@@ -189,6 +189,28 @@ st.markdown("""
     label[data-testid="stWidgetLabel"] p {
         color: #475569 !important;
         font-weight: 600 !important;
+    }
+
+    /* NEW PREMIUM FOOTER */
+    .footer-container {
+        background: #0F172A;
+        border-top: 1px solid #1E293B;
+        padding: 20px 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 99;
+    }
+    .footer-text {
+        color: #94A3B8 !important;
+        font-size: 13px !important;
+        margin: 0 !important;
+    }
+    .footer-accent {
+        color: #FF6B35 !important;
+        font-weight: 700;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -337,7 +359,9 @@ with b3:
 
 # Footer
 st.markdown("""
-<div style="text-align: center; color: #94A3B8; font-size: 12px; margin-top: 30px; padding: 20px;">
-    🚚 Food Delivery App • Built with Streamlit • 2026
+<div class="footer-container">
+    <p class="footer-text">
+        🚚 <span class="footer-accent">Food Delivery App</span> • Built with Streamlit • 2026
+    </p>
 </div>
 """, unsafe_allow_html=True)
